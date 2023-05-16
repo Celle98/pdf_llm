@@ -34,6 +34,8 @@ loaders = [UnstructuredPDFLoader(os.path.join(text_folder, fn)) for fn in os.lis
 
 index = VectorstoreIndexCreator().from_loaders(loaders)
 
+#needs embeded DUck db does not save!!!!
+
 query = "How much revenue did Meta make in 2022?"
 index.query(query)
 
